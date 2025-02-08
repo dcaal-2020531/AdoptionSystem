@@ -1,0 +1,425 @@
+{
+	"info": {
+		"_postman_id": "d8b1e6a3-295c-4a5d-90ba-b2c7d8c10a76",
+		"name": "AdoptionSystem",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37951957"
+	},
+	"item": [
+		{
+			"name": "Animal",
+			"item": [
+				{
+					"name": "Register Animal",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "PEPE",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "perro maya",
+									"type": "text"
+								},
+								{
+									"key": "age",
+									"value": "30 years",
+									"type": "text"
+								},
+								{
+									"key": "keeper",
+									"value": "67a6c52ffb73ebe3dd623526",
+									"type": "text"
+								},
+								{
+									"key": "type",
+									"value": "bulldog",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3626/v1/animal/",
+							"host": [
+								"localhost"
+							],
+							"port": "3626",
+							"path": [
+								"v1",
+								"animal",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "El mantecas",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12345678Aa*",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3626/login",
+							"host": [
+								"localhost"
+							],
+							"port": "3626",
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "register User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "ASDAD",
+									"type": "text"
+								},
+								{
+									"key": "surname",
+									"value": "DASDASD",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "borja@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "El mantecas",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12345678Aa*",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "12345678",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3626/register",
+							"host": [
+								"localhost"
+							],
+							"port": "3626",
+							"path": [
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2E2ZmVlYTA3M2Q3M2NkNDQ5NzcyYWMiLCJuYW1lIjoiQm9yamEiLCJ1c2VybmFtZSI6InNoaW5qaSIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTczOTA0NDIyNCwiZXhwIjoxNzM5MDU1MDI0fQ.qkvz7VzcOkr6gK2QgnJvTnr5zaLr2nwaQA9TP03lWz8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "El oek ",
+									"type": "text"
+								},
+								{
+									"key": "surname",
+									"value": "Ek br",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "borja@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "El bro",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "96385274lL*",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "phone",
+									"value": "12345678",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3626/v1/user/67a6feea073d73cd449772ac",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3626",
+							"path": [
+								"v1",
+								"user",
+								"67a6feea073d73cd449772ac"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update Password",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2E2ZmVlYTA3M2Q3M2NkNDQ5NzcyYWMiLCJuYW1lIjoiQm9yamEiLCJ1c2VybmFtZSI6InNoaW5qaSIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTczOTA0NDIyNCwiZXhwIjoxNzM5MDU1MDI0fQ.qkvz7VzcOkr6gK2QgnJvTnr5zaLr2nwaQA9TP03lWz8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "El oek ",
+									"type": "text"
+								},
+								{
+									"key": "surname",
+									"value": "Ek br",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "borja@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "El bro",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "96385274lL*",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "phone",
+									"value": "12345678",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3626/v1/user/67a6feea073d73cd449772ac",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3626",
+							"path": [
+								"v1",
+								"user",
+								"67a6feea073d73cd449772ac"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2E2ZmVlYTA3M2Q3M2NkNDQ5NzcyYWMiLCJuYW1lIjoiQm9yamEiLCJ1c2VybmFtZSI6InNoaW5qaSIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTczOTAzNTE1OSwiZXhwIjoxNzM5MDQ1OTU5fQ._awgX8eHvhUAOuFF9xkMk8UThm5lsZWHFgBVKH18JSs",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3626/v1/user/",
+							"host": [
+								"localhost"
+							],
+							"port": "3626",
+							"path": [
+								"v1",
+								"user",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2E2YzUyZmZiNzNlYmUzZGQ2MjM1MjYiLCJuYW1lIjoiTWlrZSIsInVzZXJuYW1lIjoidHJhaWNpb24xMjMiLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3MzkwNTI3MzksImV4cCI6MTczOTA2MzUzOX0.yopWYh_V6DVCzVFJhU6kBeyT993lA87CHeLkYGuvIU4",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3626/v1/user/delete/67a7b50668980e134feceeeb",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3626",
+							"path": [
+								"v1",
+								"user",
+								"delete",
+								"67a7b50668980e134feceeeb"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "appointment",
+			"item": [
+				{
+					"name": "test",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3626/v1/appointment/test",
+							"host": [
+								"localhost"
+							],
+							"port": "3626",
+							"path": [
+								"v1",
+								"appointment",
+								"test"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register Appointment",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2E3YmQ0MjUzYmRmMzhjNTQyZjVkOGIiLCJuYW1lIjoiQVNEQUQiLCJ1c2VybmFtZSI6ImVsIG1hbnRlY2FzIiwicm9sZSI6IkNMSUVOVCIsImlhdCI6MTczOTA0ODM2MiwiZXhwIjoxNzM5MDU5MTYyfQ.e2JeAzWgi70mSZxbv_GAz_K6G_0pYao3vqGXTrKMfSw",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "date",
+									"value": "2025-02-07",
+									"type": "text"
+								},
+								{
+									"key": "time",
+									"value": "12:00 Am",
+									"type": "text"
+								},
+								{
+									"key": "pet",
+									"value": "67a7a3258f716108cb8f76fa",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "Programed",
+									"type": "text"
+								},
+								{
+									"key": "notes",
+									"value": "El pepe",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3626/v1/appointment/",
+							"host": [
+								"localhost"
+							],
+							"port": "3626",
+							"path": [
+								"v1",
+								"appointment",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
