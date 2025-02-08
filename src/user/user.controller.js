@@ -154,8 +154,8 @@ export const deleteUser = async (req, res) => {
         const { id } = req.params
         const user = await User.findByIdAndUpdate(
             id, 
-            { status: false },  // Cambiar el estado a false
-            { new: true } // Devuelve el documento actualizado
+            { status: false }, 
+            { new: true } 
         )
 
         if (!user) return res.status(404).send(
