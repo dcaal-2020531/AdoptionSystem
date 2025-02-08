@@ -49,6 +49,10 @@ const userSchema = Schema(
             required: [true, 'Role is required'],
             uppercase: true, //Volver en mayúscula
             enum: ['ADMIN', 'CLIENT']
+        },
+        status:{
+            type:Boolean,
+            default:true
         }
 
     }

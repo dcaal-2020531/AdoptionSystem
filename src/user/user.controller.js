@@ -152,19 +152,24 @@ export const updateUserPassword = async (req, res) => {
 export const deleteUser = async (req, res) => {
     try {
         const { id } = req.params
-        const deleteUser = await User.findByIdAndDelete(id)
+        const user = await User.findByIdAndUpdate(
+            id, 
+            { status: false },  // Cambiar el estado a false
+            { new: true } // Devuelve el documento actualizado
+        )
 
-        if (!deleteUser) return res.status(404).send(
+        if (!user) return res.status(404).send(
             {
                 success: false,
                 message: 'User not found'
             }
         )
+
         return res.send(
             {
                 success: true,
-                message: 'User Eliminated',
-                user: deleteUser
+                message: 'User status updated to false',
+                user: user
             }
         )
 
@@ -178,5 +183,6 @@ export const deleteUser = async (req, res) => {
         )
     }
 }
+
 
 //update imagen 
